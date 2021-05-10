@@ -1,0 +1,23 @@
+{
+  "name": "privacy-security-student-worker-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "serve",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mozilla/privacy-security-student-worker-project.git"
+  },
+  "author": "",
+  "license": "MPL 2.0",
+  "bugs": {
+    "url": "https://github.com/mozilla/privacy-security-student-worker-project/issues"
+  },
+  "homepage": "https://github.com/mozilla/privacy-security-student-worker-project#readme",
+  "devDependencies": {
+    "serve": "^11.3.2"
+  }
+}

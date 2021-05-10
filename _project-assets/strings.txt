@@ -1,0 +1,30 @@
+Firefox Relay
+
+Home
+
+FAQ
+
+Welcome, {email address}!
+
+Manage your Relay aliases
+
+{number} remaining aliases
+
+forwarding
+
+Blocked
+
+Forwarded
+
+Created: 
+
+Firefox Relay supports email forwarding (including attachments) of email up to 150KB in size
+
+Mozilla
+
+Privacy
+
+Relay Terms
+
+Legal
+
