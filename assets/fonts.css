@@ -1,0 +1,47 @@
+@font-face {
+  font-family: "Metropolis";
+  font-style: normal;
+  font-weight: 700;
+  src: url("/assets/fonts/Metropolis/Metropolis-Bold.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Metropolis";
+  font-style: normal;
+  font-weight: 600;
+  src: url("/assets/fonts/Metropolis/Metropolis-SemiBold.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Metropolis";
+  font-style: normal;
+  font-weight: 500;
+  src: url("/assets/fonts/Metropolis/Metropolis-Medium.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Metropolis";
+  font-style: normal;
+  font-weight: 300;
+  src: url("/assets/fonts/Metropolis/Metropolis-Light.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter UI';
+  font-style: normal;
+  font-weight: 400;
+  src: url("/assets/fonts/Inter/Inter-UI-Regular.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter UI';
+  font-style: normal;
+  font-weight: 700;
+  src: url("/assets/fonts/Inter/Inter-UI-Bold.woff2") format("woff2");
+  font-display: swap;
+}

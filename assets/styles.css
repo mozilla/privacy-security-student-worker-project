@@ -1,1 +1,16 @@
+:root {
+    /* Colorful gradient used in the navigation bar */
+  --navGradient: linear-gradient(-90deg, #ff9100 0%, #f10366 50%, #6173ff 100%);
+}
+
+/* Body font */
+.font-inter {
+    font-family: "Inter UI", Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+/* Used for all titles/labels/buttons  */
+.font-metropolis {
+    font-family: "Metropolis", Arial, Helvetica, sans-serif;
+}
+
 /* Put CSS Styles Here */
