@@ -1,3 +1,6 @@
+# Netlify Link
+https://loving-noyce-f6ec8b.netlify.app/
+
 # Getting started
 
 Please see [Issue #1](https://github.com/mozilla/privacy-security-student-worker-project/issues/1) for more information on this exercise. 
