@@ -12,5 +12,532 @@
 .font-metropolis {
     font-family: "Metropolis", Arial, Helvetica, sans-serif;
 }
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 
 /* Put CSS Styles Here */
+body{
+background-image: url(./img/background.svg);
+height: 100vh;
+}
+
+.nav-content{
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #29294f;
+
+}
+.nav-options > .nav-ul{
+    display:flex;
+    align-items:center;
+    list-style: none;
+    color: white;
+    font-family: "Metropolis";
+  font-style: normal;
+  font-weight: 500;
+  src: url("./fonts/Metropolis/Metropolis-Medium.woff2") format("woff2");
+  font-display: swap;
+  margin-right: 30px;
+  font-size:20px;
+  cursor: pointer;
+
+}
+.nav-ul > li{
+    margin-right: 20px;
+}
+.nav-options-image{
+   width: 50px;
+}
+.profile-pic{
+    width: 50px;
+    height:50px;
+    background-color: #eeee;
+    border-radius: 50%;
+    z-index: 100;
+}
+.nav-logo > img{
+    width:300px;
+    margin-left: 30px;
+}
+.active{
+    border-bottom:3px solid;
+    border-image: linear-gradient(25deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+    border-image-slice: 1;
+    border-radius: 10px;
+}
+.heading-part{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.content{
+    justify-content: center;
+    margin: 5% 20%;
+
+}
+.secondary-up{
+    margin-top:7%;
+    margin-bottom:0; 
+    margin-right:20%;
+    margin-left:20%;
+
+}
+.secondary{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+
+.heading-part{
+    border-bottom: 2px solid #eeee;
+    padding-bottom: 5px;
+}
+.button-component-btn{
+    float: right;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    outline: none;
+    border: none;
+    background-color: #0061de;
+    color: white;
+    padding:10px 15px;
+    font-size:20px;
+   border-radius:5px;
+   font-family: "Metropolis";
+   font-style: normal;
+   font-weight: 400;
+   src: url("./fonts/Metropolis/Metropolis-Light.woff2") format("woff2");
+   font-display: swap;
+   margin-top: 15px;
+   cursor: pointer;
+}
+.pen{
+    color: grey;
+    margin-left:10px;
+}
+.text{
+    font-family: "Metropolis";
+    font-style: normal;
+    font-weight: 400;
+    src: url("./fonts/Metropolis/Metropolis-Light.woff2") format("woff2");
+    font-display: swap;
+    font-size:  18px;
+    color:grey;
+}
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 49px;
+    height: 25px;
+    margin-left: 20px;
+  }
+  
+  .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 25px;
+    width: 25px;
+    left: -1px;
+    top: 0px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+  .on{
+      display:flex;
+      align-items:center;
+  }
+  .card{
+    margin: 1% 20% 5% 19%;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0px 2px 6px -2px rgba(115,115,115,1);
+-webkit-box-shadow: 0px 2px 6px -2px rgba(115,115,115,1);
+-moz-box-shadow: 0px 2px 6px -2px rgba(115,115,115,1);
+border-radius: 2px;
+  }
+  .textt{
+    color: black;
+    margin: -2.5% 20% 5% 19%;
+    font-size: 12px;
+    font-weight: normal;
+    font-family: 'Inter UI';
+    font-style: normal;
+    font-weight: 300;
+    src: url(./fonts/Inter/Inter-UI-Regular.woff2) format("woff2");
+    font-display: swap;
+
+  }
+  .first{
+      display: flex;
+      align-items: center;
+      justify-content:space-between;
+      font-size: 20px;
+
+      }
+      .left{
+        font-family: 'Inter UI';
+        font-style: normal;
+        font-weight: 600;
+        src: url("./fonts/Inter/Inter-UI-Regular.woff2") format("woff2");
+        font-display: swap;
+      }
+.status{
+        display: flex;
+        align-items: center;
+        justify-content:space-between;
+        font-family: 'Inter UI';
+        font-style: normal;
+        font-weight: 400;
+        src: url("./fonts/Inter/Inter-UI-Regular.woff2") format("woff2");
+        font-display: swap;
+        color:grey;
+        
+ }
+ .block{
+     margin-right: 20px;
+     align-items: center;
+     display: flex;
+     flex-direction: column;
+ }
+ .forwaded{
+    margin-right: 10px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.display{
+    font-weight: bold;
+    color:black;
+}
+.show{
+    color:grey;
+    margin-top: 5px;
+    font-size:16px;
+    font-weight:normal;
+    font-family: 'Inter UI';
+        font-style: normal;
+        font-weight: 400;
+        src: url("./fonts/Inter/Inter-UI-Regular.woff2") format("woff2");
+        font-display: swap;
+}
+.down{
+    font-size:20px;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+.card-2{
+    margin:1% 20% 5% 19%;
+    background-color:#eeee;
+    padding: 20px;
+    box-shadow: 0px 2px 6px -2px rgba(115,115,115,1);
+-webkit-box-shadow: 0px 2px 6px -2px rgba(115,115,115,1);
+-moz-box-shadow: 0px 2px 6px -2px rgba(115,115,115,1);
+border-radius: 2px;
+margin-top: -5%;  
+}
+.delete{
+    outline: none;
+    border: none;
+    background-color: lightgray;
+    color: white;
+    padding:10px 15px;
+    font-size:20px;
+   border-radius:5px;
+   font-family: "Metropolis";
+   font-style: normal;
+   font-weight: 700;
+   src: url("./fonts/Metropolis/Metropolis-Light.woff2") format("woff2");
+   font-display: swap;
+   margin-top: 15px;
+   cursor: pointer;
+}
+.one{
+    font-family: "Metropolis";
+   font-style: normal;
+   font-weight: 400;
+   src: url("./fonts/Metropolis/Metropolis-Light.woff2") format("woff2");
+   font-display: swap;
+}
+.two{
+    font-family: "Metropolis";
+   font-style: normal;
+   font-weight: 400;
+   src: url("./fonts/Metropolis/Metropolis-Light.woff2") format("woff2");
+   font-display: swap;
+   margin-left: 40px;
+}
+.one > p{
+    color: grey;
+}
+.two > p{
+    color: grey;
+}
+.side{
+    display: flex;
+    align-items: center;
+}
+.footer{
+    background-color:#29274e;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    position: absolute;
+    width: 100%;
+    top: 95%;
+}
+.footer-ul{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    color:white;
+    font-family: "Metropolis";
+   font-style: normal;
+   font-weight: 400;
+   src: url("./fonts/Metropolis/Metropolis-Light.woff2") format("woff2");
+   font-display: swap;
+   cursor: pointer;
+}
+.footer-li{
+    margin-left: 30px;
+    font-size: 20px;
+}
+.footer-right{
+    width:200px;
+    margin-left: 50px;
+    
+}
+.footer-left{
+    margin-right:50px;
+}
+.github{
+    height: 70px;
+}
+@media screen and (max-width: 1025px){
+    body{
+        background-image: none;
+        height: 100vh;
+        }
+        .secondary-up{
+            margin-top:7%;
+            margin-bottom:10px; 
+            margin-right:4%;
+            margin-left:4%;
+        
+        }
+.container-lg{
+    display: none;
+}
+.container-mg{
+    display: block;
+}
+.nav-logo > img{
+    margin-left: 30px;
+}
+.nav-logo > img{
+    width:200px;
+}
+.heading-part{
+    display: inline;
+    text-align: center;
+    border-bottom: 2px solid #eeee;
+    padding-bottom: 5px;
+}
+.content{
+    justify-content: center;
+    margin: 5% 2%;
+
+}
+.button-component{
+    display: grid;
+    place-items: center;
+}
+.button-component-btn{
+    float: none;
+    padding:10px 15px;
+    font-size:15px;
+}
+.card{
+    margin: 1% 4% 5% 4%;  
+}
+.card-2{
+    margin: 1% 4% 5% 4%;
+  
+}
+.card-3{
+    margin:1% 4% 5% 4%;
+    background-color:#eeee;
+    padding: 20px;
+    box-shadow: 0px 2px 6px -2px rgba(115,115,115,1);
+-webkit-box-shadow: 0px 2px 6px -2px rgba(115,115,115,1);
+-moz-box-shadow: 0px 2px 6px -2px rgba(115,115,115,1);
+border-radius: 2px;
+margin-top: -4%;  
+}
+.side{
+    flex-direction: column;
+    justify-content: space-between;
+}
+.first-mg{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    flex-direction: column;
+    font-size: 20px;
+
+    }
+    .button{
+        width: 100%;
+    }
+    .delete{
+        width: 100%;
+        padding:10px 15px;
+    }
+    .one{
+        display:flex;
+        align-items:center;
+        float: left;
+    }
+    .two{
+        display:flex;
+        align-items:center;
+        justify-content: space-between;
+    }
+    .three{
+        display:flex;
+        align-items:center;
+        justify-content: space-between;
+    }
+    .footer{
+        flex-direction: column;
+    }
+    .footer-right > img{
+        margin-bottom: 20px;
+    }
+    .footer-ul{
+        flex-direction: column;
+        margin-right: 0;
+        margin-left: 40px;
+    
+    }
+.footer-li{
+    margin-bottom: 30px;
+    margin-right: 0;
+}
+.card-main{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.light{
+    color:grey;
+    font-size: 20px;
+    font-family: "Metropolis";
+    font-style: normal;
+    font-weight: 400;
+    src: url("./fonts/Metropolis/Metropolis-Light.woff2") format("woff2");
+    font-display: swap;
+    margin-bottom: 10px;
+}
+.number{
+    margin-bottom: 10px;
+    color:grey;
+    font-size: 20px;
+    font-family: "Metropolis";
+    font-style: normal;
+    font-weight: 400;
+    src: url("./fonts/Metropolis/Metropolis-Light.woff2") format("woff2");
+    font-display: swap;
+    text-align: end;
+}
+}
+
+.menu{
+    text-align: center;
+    background-color: #2f2f53;
+    color:white;
+    font-size: 25px;
+    font-family: "Metropolis";
+    font-style: normal;
+    font-weight: 400;
+    src: url("./fonts/Metropolis/Metropolis-Light.woff2") format("woff2");
+    font-display: swap;
+    padding: 10px;
+        
+}
+
+.menu-option{
+ justify-content: right;
+    background-color: #2f2f53;
+    color:white;
+    font-size: 20px;
+    font-family: "Metropolis";
+    font-style: normal;
+    font-weight: 400;
+    src: url("./fonts/Metropolis/Metropolis-Light.woff2") format("woff2");
+    font-display: swap;
+    padding: 10px;
+        
+}
+.menu-option > ul > li{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    text-align: right;
+}
+@media screen and (min-width: 1025px){
+    .container-mg{
+        display: none;
+    }
+}
