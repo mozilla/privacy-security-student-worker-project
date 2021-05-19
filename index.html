@@ -4,22 +4,110 @@
 <head>
     <meta charset="utf-8">
     <title>Firefox Relay</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
     <link rel="shortcut icon" href="https://www.mozilla.org/media/img/favicons/mozilla/favicon.d25d81d39065.ico">
     <link rel="stylesheet" href="assets/fonts.css">
     <link rel="stylesheet" href="assets/styles.css">
+    <link rel="stylesheet" href="assets/mobile.css">
+    <script defer src="https://kit.fontawesome.com/4c55e184d1.js" crossorigin="anonymous"></script>
+    <script defer src="assets/app.js"></script>
 </head>
 
 <body>
-    <!-- Put HTML Here -->
-    
-    <!-- 
-        Font Awesome v5 Free - See https://fontawesome.com/start for more info
-        Example usage: <i class="fas fa-toggle-off"></i>
-     -->
-    <script src="https://kit.fontawesome.com/4c55e184d1.js" crossorigin="anonymous"></script>
-    <script src="assets/app.js"></script>
+    <header >
+        <div class="nav-bar">
+            <img class="logo" src="assets/img/logo-relay.png" />
+            <nav class="nav">
+                <ul>
+                    <li class="home-link"><a>Home</a></li>
+                    <li class="faq"><a>FAQ</a></li>
+                </ul>
+            </nav>
+            <button class="grid-menu-button"></button>
+            <img class="profile-image" src="assets/img/MahadRehan.JPG"/>
+        </div>
+
+        <div id="nav-bar-mobile">
+            <button class="menu-button">Menu<i class="fas fa-chevron-down show-menu-icon"></i></button>
+            <nav class="drop-down-menu">
+                <ul>
+                    <li class="home"><a>Home</a></li>
+                    <li><a>FAQ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="title-container">
+          <h1 class="title">Manage your Relay aliases</h1>
+          <strong class="remaining-aliases"><span>4</span> remaining aliases</strong>
+        </div>
+
+        <button class="generate-button">
+          + Generate New Alias
+        </button>
+
+        <div class="account-container">
+          <small class="add-account-name">Add account name <i class="fas fa-pen pen-icon"></i></small>
+
+          <small class="forwarding">forwarding</small>
+          <label class="switch">
+              <input type="checkbox" />
+              <span class="slider"></span>
+          </label>
+        </div>
+
+        <div class="account-details">
+            <div class="shown-details">
+                <p class="details-email">
+                    sw4wov1s@relay.firefox.com
+                    <i class="far fa-copy copy-icon"></i>
+                    <br />
+                    <span class="show-details">Show Details</span>
+                    <i class="fas fa-chevron-down show-details-icon"></i>
+                </p>
+
+                <div class="blocked">
+                    <b>0</b>
+                    <p>Blocked</p>
+                </div>
+
+                <div class="forwarded">
+                    <b>0</b>
+                    <p>Forwarded</p>
+                </div>
+            </div>
+
+            <div class="hidden-details">
+                <div class="created-container">
+                    <b class="created">Created:</b>
+                    <b class="created-date">May 10, 2021</b>
+                </div>
+                <p class="forward-emails-to-container">
+                    <b class="forward-emails-to">Forward emails to</b>
+                    <b class="forward-email-address">mcrawford@mozilla.com</b>
+                </p>
+                <button class="delete-button">Delete</button>
+            </div>
+        </div>
+
+        <p class="support-message">
+            Firefox Relay supports email forwarding (including attachments of email up to 150kb in size
+        </p>
+    </main>
+
+    <footer class="footer">
+        <img class="footer-logo" src="assets/img/logo-mozilla.svg" />
+        <a>Privacy</a>
+        <a>Relay Terms</a>
+        <a>Legal</a>
+        <a>
+            <i class="fab fa-github github-icon"></i>
+        </a>
+    </footer>
+
 </body>
 
 </html>

@@ -1,0 +1,169 @@
+/*Styling for mobile devices (screen sizes 600px or less*/
+@media only screen and (max-width: 600px) {
+    body {
+        width: 100vw;
+        height: 100%;
+        flex-direction: column;
+        background-image: none;
+        background-color: #F6F6F7;
+    }
+    .logo{
+        margin-left: 3rem;
+        width: 12.5rem;
+    }
+    .nav-bar .home-link, .nav-bar .faq{
+        display: none;
+    }
+    .nav-bar-mobile{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #2F2F54;
+        width: 100%;
+    }
+    .menu-button{
+        padding: 1rem;
+        font-size: 1rem;
+        color: white;
+        border: none;
+        outline: none;
+        background: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        box-shadow: 2px 2px 6px #00000030;
+    }
+    .show-menu-icon{
+        font-size: 1rem;
+        opacity: 0.5;
+        margin-left: 0.5rem;
+        cursor: pointer;
+        transition: all 0.2s;
+    }
+    .drop-down-menu{
+        height: 0;
+        overflow: hidden;
+
+        width: 100vw;
+        transition: height ease-in-out 0.5s;
+    }
+    .drop-down-menu-opened{
+
+        height: 5rem;
+        transition: height ease-in-out 0.5s;
+    }
+    .drop-down-menu ul{
+
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        text-align: right;
+    }
+    .drop-down-menu li{
+        border-bottom: 1px solid rgba(128, 128, 128, 0.1);
+        margin: 0;
+        padding: 0.75rem;
+        padding-right: 2rem;
+        list-style:none;
+    }
+    /*custom ul bullet style*/
+    .drop-down-menu .home::before{
+        content: "";
+        position:relative;
+        left: -10px;
+        background:  var(--orangeGradient);
+        border-radius: 50%;
+        display:inline-block;
+        width:0.5rem;
+        height:0.5rem;
+    }
+    .nav-bar ul{
+        flex-direction: column;
+    }
+    main{
+        flex-direction: column;
+        width: 85vw;
+        min-height: 50vh;
+        padding: 1rem;
+        padding-top: 15vh;
+        padding-bottom: 5rem;
+    }
+    .title{
+        width: 100%;
+        text-align: center;
+        font-size: 1.5rem;
+    }
+    .generate-button{
+        align-self: center;
+    }
+    .remaining-aliases{
+        align-self: center;
+        margin: 0 auto;
+        margin-bottom: 1rem;
+    }
+    .add-account-name, .pen-icon{
+        display: none;
+    }
+
+    .detail-email{
+        margin: none;
+    }
+    .hidden-details{
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-evenly;
+        
+    }
+    .hidden-details-opened{
+        height: 16em;
+    }
+    .hidden-details div,.hidden-details button{
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    .blocked, .forwarded{
+        width: 100%;
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+        margin: 0;
+    }
+    .blocked p, .forwarded p{
+        flex: 1;
+    }
+    .created-container{
+        width: 100%;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+    .created{
+        flex: 1;
+        margin-right: 0;
+        font-size: 1.25rem;
+    }
+    .created-date{
+        margin-right: auto;
+        align-self: flex-end;
+    }
+    .forward-emails-to-container{
+        display: none;
+    }
+    .delete-button{
+        align-self: center;
+        width: 100%;
+        margin-left: 0;
+    }
+    .footer{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer *{
+        margin: 1rem;
+    }
+    .footer-logo{
+        width: 10rem;
+        margin: 2rem;
+    }
+  }
+  
