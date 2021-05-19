@@ -41,6 +41,9 @@
         cursor: pointer;
         transition: all 0.2s;
     }
+    .grid-menu-button{
+        width: 1vw;
+    }
     .drop-down-menu{
         height: 0;
         overflow: hidden;

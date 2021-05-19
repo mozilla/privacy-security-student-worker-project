@@ -77,8 +77,7 @@
 			title.parentNode.insertBefore(aliasesLabel, title.nextSibling)
 			shownDetails.append(blocked)
 			shownDetails.append(forwarded)
-			let a = header.lastChild
-			a.lastChild.classList.remove("nav-bar-mobile")
+
 		}
 	}
 	//add event listener on window for resize
