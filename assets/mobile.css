@@ -11,6 +11,9 @@
         margin-left: 3rem;
         width: 12.5rem;
     }
+    .nav-bar{
+        width: 100vw;
+    }
     .nav-bar .home-link, .nav-bar .faq{
         display: none;
     }
